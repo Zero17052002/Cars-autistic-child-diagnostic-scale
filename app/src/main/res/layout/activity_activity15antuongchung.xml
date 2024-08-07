@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListTest.activity_15antuongchung">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar15"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_white_16toplr"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/toolbar_title15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Mục 15 "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/c_c_bi_u_hi_n"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <RadioButton
+                    android:id="@+id/rdo15_radiobutton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/kh_ng_t_k_tr_kh_ng_bi_u_hi_n_c_c_tri_u_ch_ng_c_a_t_k"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo15_radiobutton15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/qhxh_1_5"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <RadioButton
+                    android:id="@+id/rdo15_radiobutton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/ac"
+                    android:textSize="15sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rdo15_radiobutton25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:minHeight="48dp"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/qhxh_2_5"
+                    android:textSize="15sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rdo15_radiobutton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/t_k_m_c_trung_b_nh_tr_bi_u_hi_n_m_t_s_tri_u_ch_ng_ho_c_m_c_trung_b_nh_c_a_t_k"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo15_radiobutton35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:minHeight="48dp"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/qhxh_3_5"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo15_radiobutton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/t_k_m_c_n_ng_tr_bi_u_hi_n_nhi_u_tri_u_ch_ng_ho_c_m_c_i_n_h_nh_c_a_t_k"
+                    android:textSize="15sp"
+                    tools:ignore="TextContrastCheck" />
+            </RadioGroup>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:hint="Nhập vào ngày thực hiện (dd/MM/yyyy)"
+                app:boxBackgroundMode="outline"
+                app:startIconTint="@color/Silver"
+                tools:ignore="ExtraText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btntongket15"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Tổng kết đánh giá"
+                android:textColor="@drawable/textcolorluugiatri"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

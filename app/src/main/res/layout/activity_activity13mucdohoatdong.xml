@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ListTest.activity_13mucdohoatdong">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar13"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_white_16toplr"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/toolbar_title13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Mục 13 "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/c_c_bi_u_hi_n"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <RadioButton
+                    android:id="@+id/rdo13_radiobutton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/m_c_ho_t_ng_b_nh_th_ng_ph_h_p_v_i_tu_i_v_t_nh_hu_ng_tr_kh_ng_th_hi_n_h_nh_ng_nhanh_h_n_hay_ch_m_h_n_tr_b_nh_th_ng_c_ng_tu_i_trong_m_t_t_nh_hu_ng_t_ng_t"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo13_radiobutton15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/qhxh_1_5"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <RadioButton
+                    android:id="@+id/rdo13_radiobutton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp" android:button="@drawable/radiobuttonchecked"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/b_t_th_ng_nh_v_m_c_ho_t_ng_i_khi_tr_h_i_hi_u_ng_ho_c_c_i_ch_t_l_i_v_chuy_n_ng_ch_m_m_c_ho_t_ng_c_a_tr_nh_h_ng_kh_ng_nh_n_k_t_qu_ho_t_ng_c_a_tr"
+                    android:textSize="15sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rdo13_radiobutton25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:layout_marginEnd="10dp"
+                    android:minHeight="48dp"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/qhxh_2_5"
+                    android:textSize="15sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rdo13_radiobutton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/b_t_th_ng_trung_b_nh_v_m_c_ho_t_ng_tr_c_th_qu_hi_u_ng_v_kh_c_th_d_ng_h_nh_vi_tr_c_th_ho_t_ng_kh_ng_bi_t_m_t_m_i_v_c_th_kh_ng_mu_n_ng_v_m_ng_c_l_i_tr_c_th_th_v_c_n_ph_i_th_c_gi_c_r_t_nhi_u_m_i_l_m_cho_tr_v_n_ng"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo13_radiobutton35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:minHeight="48dp"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/qhxh_3_5"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo13_radiobutton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:button="@drawable/radiobuttonchecked"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/b_t_th_ng_nghi_m_tr_ng_v_m_c_ho_t_ng_tr_th_hi_n_ho_c_qu_th_ng_ho_c_qu_hi_u_ng_v_c_th_thay_i_d_d_ng_t_tr_ng_th_i_qu_n_y_sang_tr_ng_th_i_qu_kia"
+                    android:textSize="15sp"
+                    tools:ignore="TextContrastCheck" />
+            </RadioGroup>
+            <Button
+                android:id="@+id/btn_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="@string/l_u_nh_gi_m_c_13"
+                android:textColor="@drawable/textcolorluugiatri" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

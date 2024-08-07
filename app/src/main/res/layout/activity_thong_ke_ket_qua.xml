@@ -1,0 +1,1738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThongKe.ThongKeKetQua"
+    tools:ignore="MissingConstraints">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarthongke"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@drawable/bottom_bg2"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/toolbar_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Thống Kê Kết Quả"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Ogrange">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/danh_m_cketqua"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/k_t_qu_l_n_1"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/k_t_qu_l_n_2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="SS"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+
+                </TableRow>
+                <!-- hàng 1 -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua1"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/i"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem1lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem1lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+                <!-- hàng 2 -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua2"
+
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/ii"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem2lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem2lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>                <!-- hàng 3 -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua3"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/iii"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem3lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem3lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>                <!-- hàng 4 -->
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua4"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/iv"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem4lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem4lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua5"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/v"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem5lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem5lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua6"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/vi"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem6lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem6lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua7"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/vii"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem7lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem7lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua8"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/viii"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem8lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem8lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua9"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/ix"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem9lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem9lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua10"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/x"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem10lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem10lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien10"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua11"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/xi"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem11lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem11lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien11"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua12"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/xii"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem12lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem12lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua13"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/xiii"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem13lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem13lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien13"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua14"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/xiv"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem14lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem14lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:id="@+id/Thongkeketqua15"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="@string/xv"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/diem15lan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/diem15lan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithien15"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="Tổng điểm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tongdiemlan1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tongdiemlan2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/caithiendiem"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/boderketqua">
+
+                    <!-- Thêm các cột ở đây -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="Ngày "
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Ngaythuchien1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/Ngaythuchien2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderketqua"
+                        android:padding="10dp"
+                        android:text="Null"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mức độ cải thiện sau 2 lần đánh giá "
+                android:textAlignment="center"
+                android:textColor="@color/Ogrange"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Ogrange">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/danh_m_cketqua"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text=" Mức độ cải thiện "
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+
+                    </TableRow>
+                    <!-- hàng 1 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="I.Quan Hệ Xã Hội"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+                    <!-- hàng 2 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="II.Bắt Trước"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+                    <!-- hàng 3 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="III.Đáp Ứng Tình Cảm"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+                    <!-- hàng 4 -->
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="IV.Các Tác Động Cơ Thể "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="V.Sử Dụng Đồ Vật "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="VI.Thích Nghi Thay Đổi"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="VII.Phản Ứng Thị Giác"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="VIII.Phản Ứng Thính Giác"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="IX.Phản Ứng Qau Vị"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="X.Sợ Hãi Hoặc Hồi Hộp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="XI.Giao Tiếp Bằng Lời"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="XII.Giao Tiếp Không Lời"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke12"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="XIII.Mức Độ Hoạt Động"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke13"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="XIV.Đáp Ứng Trí Tuệ"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke14"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="XV.Ân Tượng CHung"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/thongke15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chú thích bảng mức độ cải thiện "
+                    android:textAlignment="center"
+                    android:textColor="@color/Ogrange"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/teal_700">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="Mức độ "
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:padding="10dp"
+                            android:text="Hướng cải thiện"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+
+                    </TableRow>
+                    <!-- hàng 1 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Duy trì "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Nếu kết quả tốt thì bé cần cải thiện thêm"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+                    <!-- hàng 2 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Cải thiện tốt"
+                            android:textAlignment="center"
+                            android:textColor="@color/SlateBlue"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Cần phải cố gắng hơn nữa "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+                    <!-- hàng 3 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/boderketqua">
+
+                        <!-- Thêm các cột ở đây -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Không tốt"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/boderketqua"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Đưa cháu bé đến những chuyên gia trong lĩnh vực để cải thiện tình trạng của bé"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

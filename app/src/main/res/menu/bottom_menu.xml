@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <item
+          android:id="@+id/bottom_home"
+          android:icon="@drawable/home"
+          android:title="Trang chủ"
+          />
+    <item
+        android:id="@+id/bottom_kid"
+        android:icon="@drawable/user"
+        android:title="Tiện ích"
+        />
+    <item
+        android:id="@+id/bottom_setting"
+        android:icon="@drawable/extension"
+        android:title="Khác"
+        />
+
+</menu>
